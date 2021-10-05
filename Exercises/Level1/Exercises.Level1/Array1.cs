@@ -41,7 +41,20 @@ namespace Exercises.Level1
         /// </summary>
         public bool SameFirstLast(int[] nums)
         {
-            throw new NotImplementedException();
+            if (nums.Length == 0)
+            {
+                return false;
+            }
+            
+            int first = nums[0];
+            int lastIndex = nums.Length - 1;
+            int last = nums[lastIndex];
+
+            if (nums.Length > 0 && first == last)
+            {
+                return true;
+            }
+            return false;
         }
 
         /// <summary>
