@@ -101,7 +101,7 @@ namespace Exercises.Level1
             {
                 return 0;
             }
-            if (speed > 60 && speed <= 80 || isBirthday && speed > 66 && speed <=86)
+            if (speed > 60 && speed <= 80 || isBirthday && speed > 66 && speed <= 86)
             {
                 return 1;
             }
@@ -139,8 +139,27 @@ namespace Exercises.Level1
         /// </summary>
         public string AlarmClock(int day, bool vacation)
         {
-            throw new NotImplementedException();
+            if (day > 0 && day < 6 && !vacation)
+            {
+
+                return "7:00";
+            }
+            if ((day <= 0 && !vacation) || (day >= 6 && !vacation))
+            {
+                return "10:00";
+
+            }
+            if (day > 0 && day < 6 && vacation)
+            {
+
+                return "10:00";
+            }
+
+            return "off";
         }
+
+
+
 
         /// <summary>
         /// The number 6 is a truly great number. Given two int values, a and b, return true if either
