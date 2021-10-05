@@ -71,7 +71,16 @@ namespace Exercises.Level1
         /// </summary>
         public bool SquirrelPlay(int temp, bool isSummer)
         {
-            throw new NotImplementedException();
+            if (temp >= 60 && temp <= 90)
+            {
+                return true;
+            }
+            if (temp >= 60 && temp <= 100 && isSummer)
+            {
+                return true;
+            }
+            return false;
+
         }
 
         /// <summary>
