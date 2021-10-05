@@ -172,7 +172,19 @@ namespace Exercises.Level1
         /// </summary>
         public bool Love6(int a, int b)
         {
-            throw new NotImplementedException();
+            if (a + b == 6)
+            {
+                return true;
+            }
+            if ((a == 6) || (b == 6))
+            {
+                return true;
+            }
+            if ((a - b == 6) || (b - a == 6))
+            {
+                return true;
+            }
+            return false;
         }
 
         /// <summary>

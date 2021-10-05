@@ -18,7 +18,17 @@ namespace Exercises.Level1
         /// </summary>
         public bool FirstLast6(int[] nums)
         {
-            throw new NotImplementedException();
+            int first = nums[0];
+            int lastIndex = nums.Length - 1;
+            int last = nums[lastIndex];
+
+            if (first == 6 || last == 6)
+            {
+                return true;
+            }
+
+            return false;
+
         }
 
         /// <summary>
