@@ -56,7 +56,7 @@ namespace Exercises.Level1
                 return 2;
             }
 
-            return 1; throw new NotImplementedException();
+            return 1;
         }
 
         /// <summary>
@@ -96,7 +96,16 @@ namespace Exercises.Level1
         /// </summary>
         public int CaughtSpeeding(int speed, bool isBirthday)
         {
-            throw new NotImplementedException();
+
+            if (speed <= 60 || isBirthday && speed <= 65)
+            {
+                return 0;
+            }
+            if (speed > 60 && speed <= 80 || isBirthday && speed > 66 && speed <=86)
+            {
+                return 1;
+            }
+            return 2;
         }
 
         /// <summary>
