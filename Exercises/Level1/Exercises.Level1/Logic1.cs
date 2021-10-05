@@ -46,7 +46,17 @@ namespace Exercises.Level1
         /// </summary>
         public int DateFashion(int you, int date)
         {
-            throw new NotImplementedException();
+            if (you <= 2 || date <= 2)
+            {
+                return 0;
+            }
+
+            if (you >= 8 || date >= 8)
+            {
+                return 2;
+            }
+
+            return 1; throw new NotImplementedException();
         }
 
         /// <summary>
