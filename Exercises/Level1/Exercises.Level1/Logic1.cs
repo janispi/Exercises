@@ -118,7 +118,12 @@ namespace Exercises.Level1
         /// </summary>
         public int SortaSum(int a, int b)
         {
-            throw new NotImplementedException();
+            int sum = a + b;
+            if (a + b < 10 || a + b > 19)
+            {
+                return sum;
+            }
+            return 20;
         }
 
         /// <summary>
