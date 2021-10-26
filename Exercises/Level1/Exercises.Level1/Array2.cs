@@ -17,7 +17,17 @@ namespace Exercises.Level1
         /// </summary>
         public int CountEvens(int[] nums)
         {
-            throw new NotImplementedException();
+            int sum = 0;
+
+            foreach (int num in nums)
+            {
+                if (num % 2 == 0)
+                {
+                    sum++;
+                }
+
+            }
+            return sum;
         }
 
         /// <summary>
@@ -75,7 +85,17 @@ namespace Exercises.Level1
         /// </summary>
         public int Sum67(int[] nums)
         {
-            throw new NotImplementedException();
+            int sum = 0;
+
+            foreach (int num in nums)
+            {
+                if (num <= nums[6])
+                {
+                    sum++;
+                }
+
+            }
+            return sum;
         }
 
         /// <summary>
@@ -87,7 +107,15 @@ namespace Exercises.Level1
         /// </summary>
         public bool Has22(int[] nums)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < nums.Length-1; i++)
+            {
+                if (nums[i] == 2 && nums[i++] == 2)
+                {
+                    return true;
+                }
+                
+            }
+            return false;
         }
 
         /// <summary>
@@ -99,7 +127,16 @@ namespace Exercises.Level1
         /// </summary>
         public bool Lucky13(int[] nums)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] == 1 || nums[i] == 3)
+                {
+                    return false;
+                }
+
+            }
+            return true;
+
         }
 
         /// <summary>
@@ -111,7 +148,17 @@ namespace Exercises.Level1
         /// </summary>
         public bool Sum28(int[] nums)
         {
-            throw new NotImplementedException();
+            int sum = 0;
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] == 2)
+                {
+                    sum += 2;
+                }
+
+            }
+            return (sum == 8);
         }
 
         /// <summary>
@@ -150,7 +197,16 @@ namespace Exercises.Level1
         /// </summary>
         public bool Only14(int[] nums)
         {
-            throw new NotImplementedException();
+            foreach (int num in nums)
+            {
+                if (num != 1 && num !=4)
+                {
+                    return false;
+                }
+       
+
+            }
+            return true;
         }
 
         /// <summary>
